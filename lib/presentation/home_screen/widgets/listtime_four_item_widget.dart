@@ -67,7 +67,7 @@ class ListtimeFourItemWidget extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 230,
+                  width: 207,
                   margin: getMargin(
                     left: 16,
                   ),
