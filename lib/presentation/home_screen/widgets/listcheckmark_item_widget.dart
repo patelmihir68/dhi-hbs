@@ -49,7 +49,7 @@ class ListcheckmarkItemWidget extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 266,
+                  width: 251,
                   margin: getMargin(
                     left: 24,
                   ),
