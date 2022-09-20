@@ -58,7 +58,7 @@ class ActivityScreen extends GetWidget<ActivityController> {
                                                         child: Text("lbl_activity_feed".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtAvenirNextLTProDemi24.copyWith()))),
                                                 Container(
                                                     width: getHorizontalSize(
-                                                        341.00),
+                                                        399.00),
                                                     margin: getMargin(
                                                         top: 20,
                                                     ),
