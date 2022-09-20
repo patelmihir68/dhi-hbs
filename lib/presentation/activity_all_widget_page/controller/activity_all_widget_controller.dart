@@ -74,7 +74,7 @@ class ActivityAllWidgetController extends GetxController {
     Get.defaultDialog(
         onConfirm: () => Get.back(),
         title: "Error",
-        middleText: "Something Went Wrongeeeee.");
+        middleText: "msg_something_went_wrong".tr);
   }
 
   @override

@@ -37,5 +37,5 @@ class TaskswidgetModel {
 
   Rx<String> taskCounterTxt = Rx('Lorem ipsum dolor sit amet');
 
-  RxList<TasksItemModel> tasksItemList = RxList.filled(2, TasksItemModel());
+  RxList<TasksItemModel> tasksItemList = RxList.filled(0, TasksItemModel());
 }

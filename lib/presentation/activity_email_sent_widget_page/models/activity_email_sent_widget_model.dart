@@ -3,5 +3,5 @@ import 'activity_item_model.dart';
 
 class ActivityEmailSentWidgetModel {
   RxList<ActivityItemModel> activityItemList =
-      RxList.filled(2, ActivityItemModel());
+      RxList.filled(0, ActivityItemModel());
 }

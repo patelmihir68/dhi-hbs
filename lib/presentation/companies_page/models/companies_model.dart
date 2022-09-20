@@ -24,5 +24,5 @@ class CompaniesModel {
   ].obs;
 
   RxList<CompaniesItemModel> companiesItemList =
-      RxList.filled(3, CompaniesItemModel());
+      RxList.filled(0, CompaniesItemModel());
 }

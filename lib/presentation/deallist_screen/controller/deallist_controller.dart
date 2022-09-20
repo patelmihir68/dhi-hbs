@@ -166,7 +166,7 @@ class DeallistController extends GetxController {
     Get.defaultDialog(
         onConfirm: () => Get.back(),
         title: "Error",
-        middleText: "Something went wrong. Please try again.");
+        middleText: "msg_something_went_wrong".tr);
   }
 
   void _onFetchError() {}

@@ -28,5 +28,5 @@ class ContactswidgetModel {
   ].obs;
 
   RxList<ContactsItemModel> contactsItemList =
-      RxList.filled(3, ContactsItemModel());
+      RxList.filled(0, ContactsItemModel());
 }

@@ -81,6 +81,22 @@ class HomeController extends GetxController {
     //call second API
     postMeetReq.PostSearchMeetReq postSearchMeetReq =
         postMeetReq.PostSearchMeetReq();
+    postMeetReq.Filters startDateFilterMeet = postMeetReq.Filters();
+    postMeetReq.Filters endDateFilterMeet = postMeetReq.Filters();
+    postMeetReq.FilterGroups filterGroupsMeet = postMeetReq.FilterGroups();
+
+    startDateFilterMeet.propertyName = "hs_timestamp";
+    startDateFilterMeet.koperator = "GTE";
+    startDateFilterMeet.value = startDate;
+
+    filterGroupsMeet.filters = [];
+    filterGroupsMeet.filters?.add(startDateFilterMeet);
+
+    endDateFilterMeet.propertyName = "hs_timestamp";
+    endDateFilterMeet.koperator = "LTE";
+    endDateFilterMeet.value = endDate;
+    filterGroupsMeet.filters?.add(endDateFilterMeet);
+
     postSearchMeetReq.limit = 3;
     postSearchMeetReq.after = 0;
     postSearchMeetReq.properties = [
@@ -96,6 +112,8 @@ class HomeController extends GetxController {
       "hs_timestamp"
     ];
     postSearchMeetReq.filterGroups = [];
+    postSearchMeetReq.filterGroups?.add(filterGroupsMeet);
+    postSearchMeetReq.sorts = ["hs_timestamp"];
 
     this.callCreateSearchMeet(
       postSearchMeetReq.toJson(),

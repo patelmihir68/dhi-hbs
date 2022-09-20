@@ -78,7 +78,7 @@ class ActivityEmailSentWidgetController extends GetxController {
     Get.defaultDialog(
         onConfirm: () => Get.back(),
         title: "Error",
-        middleText: "Something Went Wrong.");
+        middleText: "msg_something_went_wrong".tr);
   }
 
   @override

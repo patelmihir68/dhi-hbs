@@ -112,5 +112,5 @@ final Map<String, String> enUs = {
   "lbl_select_one": "please select at least one option",
   "lbl_invalid_title": "please enter title.",
   "lbl_associate_with": "Associate with",
-  "lbl_enter_amount": "Please Enter amount",
+  "lbl_enter_amount": "Please enter valid number",
 };

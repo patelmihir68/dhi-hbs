@@ -39,5 +39,5 @@ class FutureTasksModel {
   Rx<String> taskCounterTxt = Rx('Lorem ipsum dolor sit amet');
 
   RxList<FutureTasksItemModel> futureTasksItemList =
-      RxList.filled(2, FutureTasksItemModel());
+      RxList.filled(0, FutureTasksItemModel());
 }

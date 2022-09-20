@@ -131,6 +131,6 @@ class ContactswidgetController extends GetxController {
     Get.defaultDialog(
         onConfirm: () => Get.back(),
         title: "Error",
-        middleText: "Something went wrong");
+        middleText: "msg_something_went_wrong".tr);
   }
 }

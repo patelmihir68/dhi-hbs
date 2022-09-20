@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 import 'package:hbs/widgets/custom_icon_button.dart';
-
 import '../controller/home_controller.dart';
 import '../models/listcheckmark_item_model.dart';
 
 // ignore: must_be_immutable
-class ListcheckmarkItemWidget extends StatelessWidget {
-  ListcheckmarkItemWidget(this.listcheckmarkItemModelObj);
+class TodaysDueTaskItemWidget extends StatelessWidget {
+  TodaysDueTaskItemWidget(this.listcheckmarkItemModelObj);
 
   ListcheckmarkItemModel listcheckmarkItemModelObj;
 

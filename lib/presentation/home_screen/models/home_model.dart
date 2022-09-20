@@ -6,8 +6,8 @@ class HomeModel {
   Rx<String> durationTxt = Rx('Lorem ipsum dolor sit amet');
   Rx<String> k8MeetingsScheTxt = Rx('Lorem ipsum dolor sit amet');
   RxList<ListcheckmarkItemModel> listcheckmarkItemList =
-      RxList.filled(3, ListcheckmarkItemModel());
+      RxList.filled(0, ListcheckmarkItemModel());
 
   RxList<ListtimeFourItemModel> listtimeFourItemList =
-      RxList.filled(2, ListtimeFourItemModel());
+      RxList.filled(0, ListtimeFourItemModel());
 }

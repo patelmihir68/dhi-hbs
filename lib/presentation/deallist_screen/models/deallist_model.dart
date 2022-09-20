@@ -28,5 +28,5 @@ class DeallistModel {
   ].obs;
 
   RxList<DeallistItemModel> deallistItemList =
-      RxList.filled(3, DeallistItemModel());
+      RxList.filled(0, DeallistItemModel());
 }

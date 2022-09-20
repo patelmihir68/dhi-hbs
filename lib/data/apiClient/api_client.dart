@@ -40,7 +40,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -67,7 +67,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -94,7 +94,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -121,7 +121,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -148,7 +148,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -171,7 +171,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -198,7 +198,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -221,7 +221,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -244,7 +244,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -271,7 +271,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -298,7 +298,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error) {
@@ -320,7 +320,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error) {
@@ -349,7 +349,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {
@@ -378,7 +378,7 @@ class ApiClient extends GetConnect {
         onSuccess!(response.body);
       } else {
         onError!(
-          response.hasError ? response.statusText : 'Something Went Wrong!',
+          response.hasError ? response.statusText : "msg_something_went_wrong".tr,
         );
       }
     } catch (error, stackTrace) {

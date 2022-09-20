@@ -5,8 +5,8 @@ import '../controller/home_controller.dart';
 import '../models/listtime_four_item_model.dart';
 
 // ignore: must_be_immutable
-class ListtimeFourItemWidget extends StatelessWidget {
-  ListtimeFourItemWidget(this.listtimeFourItemModelObj);
+class TodaysDueMeetItemWidget extends StatelessWidget {
+  TodaysDueMeetItemWidget(this.listtimeFourItemModelObj);
 
   ListtimeFourItemModel listtimeFourItemModelObj;
 

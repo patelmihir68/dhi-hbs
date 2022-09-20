@@ -3,8 +3,9 @@ class PostSearchMeetReq {
   List<String>? properties;
   int? limit;
   int? after;
+  List<String>? sorts;
 
-  PostSearchMeetReq({this.filterGroups, this.properties, this.limit, this.after});
+  PostSearchMeetReq({this.filterGroups, this.properties, this.limit, this.after,this.sorts});
 
   PostSearchMeetReq.fromJson(Map<String, dynamic> json) {
     if (json['filterGroups'] != null) {
@@ -16,6 +17,7 @@ class PostSearchMeetReq {
     properties = json['properties'].cast<String>();
     limit = json['limit'];
     after = json['after'];
+    sorts = json['sorts'].cast<String>();
   }
 
   Map<String, dynamic> toJson() {
@@ -31,6 +33,9 @@ class PostSearchMeetReq {
     }
     if (this.after != null) {
       data['after'] = this.after;
+    }
+    if (this.sorts != null) {
+      data['sorts'] = this.sorts;
     }
     return data;
   }

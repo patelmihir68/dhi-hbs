@@ -8,10 +8,7 @@ import 'package:hbs/widgets/custom_drop_down1.dart';
 import 'package:hbs/widgets/custom_text_form_field.dart';
 import 'package:intl/intl.dart';
 
-// import '../../data/models/companiesSearch/post_companies_search_resp.dart';
-
 import 'controller/add_a_deal_controller.dart';
-// import 'package:hbs/controller/deallist_controller.dart' as dealListController;
 
 class AddADealScreen extends GetWidget<AddADealController> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -264,7 +261,7 @@ class AddADealScreen extends GetWidget<AddADealController> {
                                                   value.isEmpty ||
                                                   (!isNumeric(value,
                                                       isRequired: true))) {
-                                                return "Please enter valid number";
+                                                return "lbl_enter_amount".tr;
                                               }
                                               return null;
                                             },
@@ -423,7 +420,7 @@ class AddADealScreen extends GetWidget<AddADealController> {
   }
 
   onTapImgArrowleft() {
-    Get.back();
+    Get.toNamed(AppRoutes.deallistScreen);
   }
 
   void onTapTxtSave() {
@@ -463,7 +460,7 @@ class AddADealScreen extends GetWidget<AddADealController> {
     Get.defaultDialog(
         onConfirm: () => Get.back(),
         title: "Oops",
-        middleText: "Something went wrong, Please try again.");
+        middleText: "msg_something_went_wrong".tr);
   }
 
   onTapImgCalanderIcon() {

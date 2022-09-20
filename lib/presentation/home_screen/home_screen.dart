@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 import 'package:hbs/widgets/custom_button.dart';
 
-import '../home_screen/widgets/listcheckmark_item_widget.dart';
-import '../home_screen/widgets/listtime_four_item_widget.dart';
+import '../home_screen/widgets/todays_due_task_item_widget.dart';
+import '../home_screen/widgets/todays_due_meet_item_widget.dart';
 import 'controller/home_controller.dart';
 import 'models/listcheckmark_item_model.dart';
 import 'models/listtime_four_item_model.dart';
@@ -154,7 +154,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                                 controller.homeModelObj.value
                                                         .listcheckmarkItemList[
                                                     index];
-                                            return ListcheckmarkItemWidget(
+                                            return TodaysDueTaskItemWidget(
                                                 model);
                                           }))),
                                   CustomButton(
@@ -219,7 +219,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                                 controller.homeModelObj.value
                                                         .listtimeFourItemList[
                                                     index];
-                                            return ListtimeFourItemWidget(
+                                            return TodaysDueMeetItemWidget(
                                                 model);
                                           })))
                                 ]))
@@ -476,18 +476,18 @@ class HomeScreen extends GetWidget<HomeController> {
   }
 
   onTapColumncontacts() {
-    Get.toNamed(AppRoutes.contactsScreen);
+    Get.offNamed(AppRoutes.contactsScreen);
   }
 
   onTapColumnvector5() {
-    Get.toNamed(AppRoutes.deallistScreen);
+    Get.offNamed(AppRoutes.deallistScreen);
   }
 
   onTapColumnactivity() {
-    Get.toNamed(AppRoutes.activityScreen);
+    Get.offNamed(AppRoutes.activityScreen);
   }
 
   onTapColumnvector6() {
-    Get.toNamed(AppRoutes.moreScreen);
+    Get.offNamed(AppRoutes.moreScreen);
   }
 }
