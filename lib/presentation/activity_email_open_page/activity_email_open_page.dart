@@ -1,7 +1,7 @@
-import '../activity_email_open_page/widgets/listellipsefive1_item_widget.dart';
+import '../activity_email_open_page/widgets/activity_email_open_item_widget.dart';
 import 'controller/activity_email_open_controller.dart';
 import 'models/activity_email_open_model.dart';
-import 'models/listellipsefive1_item_model.dart';
+import 'models/activity_email_open_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 
@@ -39,13 +39,13 @@ class ActivityEmailOpenPage extends StatelessWidget {
                   physics: BouncingScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: controller.activityEmailOpenModelObj.value
-                      .listellipsefive1ItemList.length,
+                      .activityEmailOpenItemList.length,
                   itemBuilder: (context, index) {
-                    Listellipsefive1ItemModel model = controller
+                    ActivityEmailOpenItemModel model = controller
                         .activityEmailOpenModelObj
                         .value
-                        .listellipsefive1ItemList[index];
-                    return Listellipsefive1ItemWidget(
+                        .activityEmailOpenItemList[index];
+                    return ActivityEmailOpenItemWidget(
                       model,
                     );
                   },

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 
 import '../controller/activity_all_widget_controller.dart';
-import '../models/listellipsefive_item_model.dart';
+import '../models/activity_all_item_model.dart';
 
 // ignore: must_be_immutable
-class ListellipsefiveItemWidget extends StatelessWidget {
-  ListellipsefiveItemWidget(this.listellipsefiveItemModelObj);
+class ActivityAllItemWidget extends StatelessWidget {
+  ActivityAllItemWidget(this.activityAllItemModelObj);
 
-  ListellipsefiveItemModel listellipsefiveItemModelObj;
+  ActivityAllItemModel activityAllItemModelObj;
 
   var controller = Get.find<ActivityAllWidgetController>();
 
@@ -37,7 +37,7 @@ class ListellipsefiveItemWidget extends StatelessWidget {
             ),
             child: Obx(
               () => Text(
-                "${listellipsefiveItemModelObj.typeTxt.value} email: ${listellipsefiveItemModelObj.wassentemailTxt.value}",
+                "${activityAllItemModelObj.typeTxt.value} email: ${activityAllItemModelObj.wassentemailTxt.value}",
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.left,
                 style: AppStyle.txtAvenirNextLTProRegular16.copyWith(),
@@ -61,7 +61,7 @@ class ListellipsefiveItemWidget extends StatelessWidget {
                   ),
                   child: Obx(
                     () => Text(
-                      listellipsefiveItemModelObj.timeTxt.value,
+                      activityAllItemModelObj.timeTxt.value,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.left,
                       style: AppStyle.txtAvenirNextLTProRegular12.copyWith(),
@@ -126,7 +126,7 @@ class ListellipsefiveItemWidget extends StatelessWidget {
                   ),
                   child: Obx(
                     () => Text(
-                      listellipsefiveItemModelObj.typeTxt.value,
+                      activityAllItemModelObj.typeTxt.value,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
                       style: AppStyle.txtAvenirNextLTProDemi14.copyWith(),

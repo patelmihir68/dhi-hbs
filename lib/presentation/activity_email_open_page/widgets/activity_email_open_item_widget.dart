@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 
 import '../controller/activity_email_open_controller.dart';
-import '../models/listellipsefive1_item_model.dart';
+import '../models/activity_email_open_item_model.dart';
 
 // ignore: must_be_immutable
-class Listellipsefive1ItemWidget extends StatelessWidget {
-  Listellipsefive1ItemWidget(this.listellipsefive1ItemModelObj);
 
-  Listellipsefive1ItemModel listellipsefive1ItemModelObj;
+class ActivityEmailOpenItemWidget extends StatelessWidget {
+  ActivityEmailOpenItemWidget(this.activityEmailOpenItemModelObj);
+
+  ActivityEmailOpenItemModel activityEmailOpenItemModelObj;
 
   var controller = Get.find<ActivityEmailOpenController>();
 
@@ -29,68 +30,6 @@ class Listellipsefive1ItemWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          /* Padding(
-            padding: getPadding(
-              left: 16,
-              top: 16,
-              right: 16,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(
-                    getHorizontalSize(
-                      20.00,
-                    ),
-                  ),
-                  child: CommonImageView(
-                    imagePath: ImageConstant.imgEllipse5,
-                    height: getSize(
-                      40.00,
-                    ),
-                    width: getSize(
-                      40.00,
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: getMargin(
-                    left: 16,
-                    top: 3,
-                    bottom: 3,
-                  ),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        "lbl_brian_halligan".tr,
-                        overflow: TextOverflow.ellipsis,
-                        textAlign: TextAlign.left,
-                        style: AppStyle.txtAvenirNextLTProDemi18.copyWith(),
-                      ),
-                      Padding(
-                        padding: getPadding(
-                          right: 9,
-                        ),
-                        child: Text(
-                          "msg_ceo_at_bluemoon".tr,
-                          overflow: TextOverflow.ellipsis,
-                          textAlign: TextAlign.left,
-                          style:
-                              AppStyle.txtAvenirNextLTProRegular10.copyWith(),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),*/
           Padding(
             padding: getPadding(
               left: 16,
@@ -99,7 +38,7 @@ class Listellipsefive1ItemWidget extends StatelessWidget {
             ),
             child: Obx(
               () => Text(
-                "${listellipsefive1ItemModelObj.typeTxt.value} email: ${listellipsefive1ItemModelObj.wassentemailTxt.value}",
+                "${activityEmailOpenItemModelObj.typeTxt.value} email: ${activityEmailOpenItemModelObj.wassentemailTxt.value}",
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.left,
                 style: AppStyle.txtAvenirNextLTProRegular16.copyWith(),
@@ -123,7 +62,7 @@ class Listellipsefive1ItemWidget extends StatelessWidget {
                   ),
                   child: Obx(
                     () => Text(
-                      listellipsefive1ItemModelObj.timeTxt.value,
+                      activityEmailOpenItemModelObj.timeTxt.value,
                       overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.left,
                       style: AppStyle.txtAvenirNextLTProRegular12.copyWith(),
@@ -197,7 +136,7 @@ class Listellipsefive1ItemWidget extends StatelessWidget {
                     ),
                     child: Obx(
                       () => Text(
-                        listellipsefive1ItemModelObj.typeTxt.value,
+                        activityEmailOpenItemModelObj.typeTxt.value,
                         overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.left,
                         style: AppStyle.txtAvenirNextLTProDemi14.copyWith(),

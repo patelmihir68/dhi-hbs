@@ -15,8 +15,8 @@ import 'package:hbs/presentation/home_screen/models/home_model.dart';
 import 'package:intl/intl.dart';
 
 import '/core/app_export.dart';
-import '../models/listcheckmark_item_model.dart';
-import '../models/listtime_four_item_model.dart';
+import '../models/todays_due_task_item_model.dart';
+import '../models/todays_due_meet_item_model.dart';
 
 class HomeController extends GetxController {
   Rx<HomeModel> homeModelObj = HomeModel().obs;
@@ -201,11 +201,11 @@ class HomeController extends GetxController {
       }
     }
 
-    List<ListcheckmarkItemModel> listcheckmarkItemModelList = [];
+    List<TodaysDueTaskItemModel> listcheckmarkItemModelList = [];
     if (postTasksSearchResp!.results! != null &&
         postTasksSearchResp!.results!.isNotEmpty) {
       for (var element in postTasksSearchResp!.results!) {
-        var listcheckmarkItemModel = ListcheckmarkItemModel();
+        var listcheckmarkItemModel = TodaysDueTaskItemModel();
         listcheckmarkItemModel.callwithDavidTxt.value =
             element.properties!.hsTaskSubject!.toString();
         listcheckmarkItemModel.timeOneTxt.value =
@@ -315,11 +315,11 @@ class HomeController extends GetxController {
       }
     }
 
-    List<ListtimeFourItemModel> listtimeFourItemModelList = [];
+    List<TodaysDueMeetItemModel> listtimeFourItemModelList = [];
     if (postSearchMeetResp!.results! != null &&
         postSearchMeetResp!.results!.isNotEmpty) {
       for (var element in postSearchMeetResp!.results!) {
-        var listtimeFourItemModel = ListtimeFourItemModel();
+        var listtimeFourItemModel = TodaysDueMeetItemModel();
         listtimeFourItemModel.meetTitle.value =
             element.properties!.hsMeetingTitle != null
                 ? element.properties!.hsMeetingBody!.toString()

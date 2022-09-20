@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'listellipsefive_item_model.dart';
+import 'activity_all_item_model.dart';
 
 class ActivityAllWidgetModel {
-  RxList<ListellipsefiveItemModel> listellipsefiveItemList =
-      RxList.filled(0, ListellipsefiveItemModel());
+  RxList<ActivityAllItemModel> activityAllItemList =
+      RxList.filled(0, ActivityAllItemModel());
 }

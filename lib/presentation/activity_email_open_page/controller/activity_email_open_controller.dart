@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:hbs/data/apiClient/api_client.dart';
 import 'package:hbs/data/models/events/get_events_resp.dart';
 
-import '../models/listellipsefive1_item_model.dart';
+import '../models/activity_email_open_item_model.dart';
 import '/core/app_export.dart';
 import 'package:hbs/presentation/activity_email_open_page/models/activity_email_open_model.dart';
 
@@ -57,21 +57,21 @@ class ActivityEmailOpenController extends GetxController {
   }
 
   void _onFetchEventsSuccess() {
-    List<Listellipsefive1ItemModel> listellipsefive1ItemList = [];
+    List<ActivityEmailOpenItemModel> activityEmailOpenItemList = [];
 
     if (getEventsResp!.events! != null && getEventsResp!.events!.isNotEmpty) {
       for (var element in getEventsResp!.events!) {
         if(element.type == "OPEN"){
-          var listellipsefive1ItemModel = Listellipsefive1ItemModel();
+          var listellipsefive1ItemModel = ActivityEmailOpenItemModel();
           listellipsefive1ItemModel.wassentemailTxt.value = element.recipient!.toString();
           listellipsefive1ItemModel.typeTxt.value = element.type!.toString();
           listellipsefive1ItemModel.deviceType.value = (element.deviceType != null) ? element.deviceType!.toString() : "";
           listellipsefive1ItemModel.timeTxt.value = element.created!.toString();
-          listellipsefive1ItemList.add(listellipsefive1ItemModel);
+          activityEmailOpenItemList.add(listellipsefive1ItemModel);
         }
       }
     }
-    activityEmailOpenModelObj.value.listellipsefive1ItemList.value = listellipsefive1ItemList;
+    activityEmailOpenModelObj.value.activityEmailOpenItemList.value = activityEmailOpenItemList;
   }
 
   void _onFetchEventsError() {

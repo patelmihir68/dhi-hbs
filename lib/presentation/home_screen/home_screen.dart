@@ -5,8 +5,8 @@ import 'package:hbs/widgets/custom_button.dart';
 import '../home_screen/widgets/todays_due_task_item_widget.dart';
 import '../home_screen/widgets/todays_due_meet_item_widget.dart';
 import 'controller/home_controller.dart';
-import 'models/listcheckmark_item_model.dart';
-import 'models/listtime_four_item_model.dart';
+import 'models/todays_due_task_item_model.dart';
+import 'models/todays_due_meet_item_model.dart';
 
 class HomeScreen extends GetWidget<HomeController> {
   @override
@@ -150,7 +150,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                               .listcheckmarkItemList
                                               .length,
                                           itemBuilder: (context, index) {
-                                            ListcheckmarkItemModel model =
+                                            TodaysDueTaskItemModel model =
                                                 controller.homeModelObj.value
                                                         .listcheckmarkItemList[
                                                     index];
@@ -215,7 +215,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                               .listtimeFourItemList
                                               .length,
                                           itemBuilder: (context, index) {
-                                            ListtimeFourItemModel model =
+                                            TodaysDueMeetItemModel model =
                                                 controller.homeModelObj.value
                                                         .listtimeFourItemList[
                                                     index];

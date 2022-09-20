@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:hbs/data/apiClient/api_client.dart';
 import 'package:hbs/data/models/events/get_events_resp.dart';
 
-import '../models/listellipsefive_item_model.dart';
+import '../models/activity_all_item_model.dart';
 import '/core/app_export.dart';
 import 'package:hbs/presentation/activity_all_widget_page/models/activity_all_widget_model.dart';
 
@@ -55,19 +55,19 @@ class ActivityAllWidgetController extends GetxController {
   }
 
   void _onFetchEventsSuccess() {
-    List<ListellipsefiveItemModel> listellipsefiveItemList = [];
+    List<ActivityAllItemModel> activityAllItemList = [];
 
     if (getEventsResp!.events! != null && getEventsResp!.events!.isNotEmpty) {
       for (var element in getEventsResp!.events!) {
-        var listellipsefiveItemModel = ListellipsefiveItemModel();
-        listellipsefiveItemModel.wassentemailTxt.value = element.recipient!.toString();
-        listellipsefiveItemModel.typeTxt.value = element.type!.toString();
-        listellipsefiveItemModel.deviceType.value = (element.deviceType != null) ? element.deviceType!.toString() : "";
-        listellipsefiveItemModel.timeTxt.value = element.created!.toString();
-        listellipsefiveItemList.add(listellipsefiveItemModel);
+        var activityAllItemModel = ActivityAllItemModel();
+        activityAllItemModel.wassentemailTxt.value = element.recipient!.toString();
+        activityAllItemModel.typeTxt.value = element.type!.toString();
+        activityAllItemModel.deviceType.value = (element.deviceType != null) ? element.deviceType!.toString() : "";
+        activityAllItemModel.timeTxt.value = element.created!.toString();
+        activityAllItemList.add(activityAllItemModel);
       }
     }
-    activityAllWidgetModelObj.value.listellipsefiveItemList.value = listellipsefiveItemList;
+    activityAllWidgetModelObj.value.activityAllItemList.value = activityAllItemList;
   }
 
   void _onFetchEventsError() {

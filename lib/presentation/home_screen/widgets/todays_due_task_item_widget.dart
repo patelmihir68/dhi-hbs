@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 import 'package:hbs/widgets/custom_icon_button.dart';
 import '../controller/home_controller.dart';
-import '../models/listcheckmark_item_model.dart';
+import '../models/todays_due_task_item_model.dart';
 
 // ignore: must_be_immutable
 class TodaysDueTaskItemWidget extends StatelessWidget {
-  TodaysDueTaskItemWidget(this.listcheckmarkItemModelObj);
+  TodaysDueTaskItemWidget(this.todaysDueTaskItemModelObj);
 
-  ListcheckmarkItemModel listcheckmarkItemModelObj;
+  TodaysDueTaskItemModel todaysDueTaskItemModelObj;
 
   var controller = Get.find<HomeController>();
 
@@ -37,7 +37,7 @@ class TodaysDueTaskItemWidget extends StatelessWidget {
                   ),
                   child: Obx(
                     () => CommonImageView(
-                      svgPath: listcheckmarkItemModelObj.taskStatusImg.value,
+                      svgPath: todaysDueTaskItemModelObj.taskStatusImg.value,
                       height: getSize(
                         30.00,
                       ),
@@ -59,7 +59,7 @@ class TodaysDueTaskItemWidget extends StatelessWidget {
                     children: [
                       Obx(
                         () => Text(
-                          listcheckmarkItemModelObj.callwithDavidTxt.value,
+                          todaysDueTaskItemModelObj.callwithDavidTxt.value,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
                           style: AppStyle.txtAvenirNextLTProDemi18.copyWith(),
@@ -72,7 +72,7 @@ class TodaysDueTaskItemWidget extends StatelessWidget {
                         ),
                         child: Obx(
                           () => Text(
-                            listcheckmarkItemModelObj.taskContact.value,
+                            todaysDueTaskItemModelObj.taskContact.value,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
                             style: AppStyle
@@ -95,7 +95,7 @@ class TodaysDueTaskItemWidget extends StatelessWidget {
                         ),
                         child: Obx(
                           () => Text(
-                            listcheckmarkItemModelObj.timeOneTxt.value,
+                            todaysDueTaskItemModelObj.timeOneTxt.value,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
                             style: AppStyle.txtAvenirNextLTProDemi14.copyWith(),
@@ -118,7 +118,7 @@ class TodaysDueTaskItemWidget extends StatelessWidget {
             ),
             child: Obx(
               () => CommonImageView(
-                svgPath: listcheckmarkItemModelObj.taskTypeImg.value,
+                svgPath: todaysDueTaskItemModelObj.taskTypeImg.value,
               ),
             ),
           ),

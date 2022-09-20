@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 
 import '../controller/home_controller.dart';
-import '../models/listtime_four_item_model.dart';
+import '../models/todays_due_meet_item_model.dart';
 
 // ignore: must_be_immutable
 class TodaysDueMeetItemWidget extends StatelessWidget {
-  TodaysDueMeetItemWidget(this.listtimeFourItemModelObj);
+  TodaysDueMeetItemWidget(this.todaysDueMeetItemModelObj);
 
-  ListtimeFourItemModel listtimeFourItemModelObj;
+  TodaysDueMeetItemModel todaysDueMeetItemModelObj;
 
   var controller = Get.find<HomeController>();
 
@@ -42,7 +42,7 @@ class TodaysDueMeetItemWidget extends StatelessWidget {
                     children: [
                       Obx(
                         () => Text(
-                          listtimeFourItemModelObj.meetStartTime.value,
+                          todaysDueMeetItemModelObj.meetStartTime.value,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
                           style: AppStyle.txtAvenirNextLTProBold12.copyWith(),
@@ -55,7 +55,7 @@ class TodaysDueMeetItemWidget extends StatelessWidget {
                         ),
                         child: Obx(
                           () => Text(
-                            listtimeFourItemModelObj.meetEndTime.value,
+                            todaysDueMeetItemModelObj.meetEndTime.value,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
                             style:
@@ -82,7 +82,7 @@ class TodaysDueMeetItemWidget extends StatelessWidget {
                         ),
                         child: Obx(
                           () => Text(
-                            listtimeFourItemModelObj.meetTitle.value,
+                            todaysDueMeetItemModelObj.meetTitle.value,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
                             style: AppStyle.txtAvenirNextLTProDemi18Bluegray700
@@ -96,7 +96,7 @@ class TodaysDueMeetItemWidget extends StatelessWidget {
                         ),
                         child: Obx(
                           () => Text( "With " +
-                            listtimeFourItemModelObj.meetContacts.value,
+                              todaysDueMeetItemModelObj.meetContacts.value,
                             overflow: TextOverflow.ellipsis,
                             textAlign: TextAlign.left,
                             style: AppStyle
@@ -129,7 +129,7 @@ class TodaysDueMeetItemWidget extends StatelessWidget {
                       ),
                       child: Obx(
                         () => Text(
-                          listtimeFourItemModelObj.meetTime.value,
+                          todaysDueMeetItemModelObj.meetTime.value,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.left,
                           style: AppStyle.txtAvenirNextLTProRegular12Bluegray702

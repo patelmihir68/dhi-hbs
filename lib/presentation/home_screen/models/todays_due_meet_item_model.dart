@@ -1,6 +1,6 @@
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
 
-class ListtimeFourItemModel {
+class TodaysDueMeetItemModel {
   Rx<String> k8MeetingsScheTxt = Rx('Lorem ipsum dolor sit amet');
   Rx<String> meetTitle = Rx('Lorem ipsum dolor sit amet');
   Rx<String> meetStartTime = Rx('Lorem ipsum dolor sit amet');

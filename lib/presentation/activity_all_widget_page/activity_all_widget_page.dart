@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hbs/core/app_export.dart';
 
-import '../activity_all_widget_page/widgets/listellipsefive_item_widget.dart';
+import '../activity_all_widget_page/widgets/activity_all_item_widget.dart';
 import 'controller/activity_all_widget_controller.dart';
 import 'models/activity_all_widget_model.dart';
-import 'models/listellipsefive_item_model.dart';
+import 'models/activity_all_item_model.dart';
 
 // ignore_for_file: must_be_immutable
 class ActivityAllWidgetPage extends StatelessWidget {
@@ -40,13 +40,13 @@ class ActivityAllWidgetPage extends StatelessWidget {
                   physics: BouncingScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: controller.activityAllWidgetModelObj.value
-                      .listellipsefiveItemList.length,
+                      .activityAllItemList.length,
                   itemBuilder: (context, index) {
-                    ListellipsefiveItemModel model = controller
+                    ActivityAllItemModel model = controller
                         .activityAllWidgetModelObj
                         .value
-                        .listellipsefiveItemList[index];
-                    return ListellipsefiveItemWidget(
+                        .activityAllItemList[index];
+                    return ActivityAllItemWidget(
                       model,
                     );
                   },
