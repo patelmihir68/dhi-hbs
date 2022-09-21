@@ -50,11 +50,11 @@ https://www.figma.com/file/ujTezE27M27qtduON3i7jI/DhiWise-Use-Cases?node-id=4013
 
 ## Run the application.
 
-1. You need to create one appConfig.dart inside lib/core/constants to store api key..
+1. You need to replace hapikey in appConfig.dart inside lib/core/constants to store api key.
 
-5. ```Flutter pub get ```
+2. ```Flutter pub get ```
 
-6. ``` Flutter run ```
+3. ``` Flutter run ```
 
 
 ## Folder Structure
